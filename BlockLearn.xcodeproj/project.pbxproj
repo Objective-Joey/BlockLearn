@@ -26,6 +26,7 @@
 		F945D37B1ECC6DF800053EE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F945D37E1ECC6DF800053EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F945D3801ECC6DF800053EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F945D3881ECC701500053EE4 /* DescriptionFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DescriptionFile.h; path = ../DescriptionFile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		F945D36F1ECC6DF800053EE4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F945D3881ECC701500053EE4 /* DescriptionFile.h */,
 				F945D3701ECC6DF800053EE4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -312,6 +314,7 @@
 				F945D3851ECC6DF800053EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
