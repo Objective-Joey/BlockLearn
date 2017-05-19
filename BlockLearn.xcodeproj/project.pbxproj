@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9293F591ECF2F8B009D1B04 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = F9293F581ECF2F8B009D1B04 /* ClassA.m */; };
 		F945D3711ECC6DF800053EE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F945D3701ECC6DF800053EE4 /* main.m */; };
 		F945D3741ECC6DF800053EE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F945D3731ECC6DF800053EE4 /* AppDelegate.m */; };
 		F945D3771ECC6DF800053EE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F945D3761ECC6DF800053EE4 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F9293F571ECF2F8B009D1B04 /* ClassA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
+		F9293F581ECF2F8B009D1B04 /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
 		F945D36C1ECC6DF800053EE4 /* BlockLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F945D3701ECC6DF800053EE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F945D3721ECC6DF800053EE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +67,8 @@
 				F945D3751ECC6DF800053EE4 /* ViewController.h */,
 				F945D3761ECC6DF800053EE4 /* ViewController.m */,
 				F945D3781ECC6DF800053EE4 /* Main.storyboard */,
+				F9293F571ECF2F8B009D1B04 /* ClassA.h */,
+				F9293F581ECF2F8B009D1B04 /* ClassA.m */,
 				F945D37B1ECC6DF800053EE4 /* Assets.xcassets */,
 				F945D37D1ECC6DF800053EE4 /* LaunchScreen.storyboard */,
 				F945D3801ECC6DF800053EE4 /* Info.plist */,
@@ -153,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9293F591ECF2F8B009D1B04 /* ClassA.m in Sources */,
 				F945D3771ECC6DF800053EE4 /* ViewController.m in Sources */,
 				F945D3741ECC6DF800053EE4 /* AppDelegate.m in Sources */,
 				F945D3711ECC6DF800053EE4 /* main.m in Sources */,
@@ -275,8 +281,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DEVELOPMENT_TEAM = CFH6AF4L74;
 				INFOPLIST_FILE = BlockLearn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pingankeji.com.BlockLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,8 +295,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DEVELOPMENT_TEAM = CFH6AF4L74;
 				INFOPLIST_FILE = BlockLearn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pingankeji.com.BlockLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";

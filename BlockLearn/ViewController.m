@@ -12,7 +12,7 @@ typedef void (^BlockObj)(void);
 
 @interface ViewController ()
 
-@property BlockObj obj7;
+@property(nonatomic)  BlockObj obj7;
 
 @end
 
@@ -103,6 +103,8 @@ typedef void (^BlockObj)(void);
     
    //问题四
     //属性默认为__strong修饰符修饰
+    //有疑问的话可以试试 weak、assign
+    //__strong 修饰符，block会被复制到堆上
     //因此不用指明copy来修饰
     
     UIButton *btn=[[UIButton alloc] initWithFrame:CGRectMake(40, 40, 100, 100)];
