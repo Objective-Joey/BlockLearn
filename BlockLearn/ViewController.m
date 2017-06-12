@@ -7,13 +7,13 @@
 //
 
 #import "ViewController.h"
-
+#import "ClassB.h"
 typedef void (^BlockObj)(void);
 
 @interface ViewController ()
 
 @property(nonatomic)  BlockObj obj7;
-
+@property (nonatomic) NSString * str;
 @end
 
 @implementation ViewController
@@ -21,14 +21,29 @@ typedef void (^BlockObj)(void);
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    ClassB * hh=[ClassB new];
+    
+    //[hh pring];
+    
+    return;
+    
+    
+    
+    
+    
+    
+    
+    
     //Block 形式上类似于函数指针
     //本质上是对象
     //使用方法上和普通的对象没区别
 
     NSArray * arr1=[[NSArray alloc] initWithObjects:@"Test1", nil];
-    
+    static int jj=0;
+    _str=@"fsdfsd";
     BlockObj block1=^{
-        
+        _str=@"fsdfsfsd";
+        jj=7;
         NSLog(@"block1__%@",arr1);
     };
     BlockObj block2=^{
@@ -112,6 +127,7 @@ typedef void (^BlockObj)(void);
     [btn addTarget:self action:@selector(question4) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
 
+    [self func];
     // Do any additional setup after loading the view, typically from a nib.
 }
 //问题四
@@ -120,6 +136,25 @@ typedef void (^BlockObj)(void);
 -(void)question4{
 
     _obj7();
+}
+
+-(void)func{
+
+    int i;
+    
+    int (^Blocks[10])(void);
+    
+    for (i=0; i<10; i++) {
+        Blocks[i]=^{
+        
+            return i;
+            
+        };
+    }
+
+    for (int i=0; i<10; i++) {
+        NSLog(@"__%@",Blocks[i]);
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

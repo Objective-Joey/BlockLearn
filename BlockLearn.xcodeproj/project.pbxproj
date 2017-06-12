@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F91C92BD1ED1E2AD0025163E /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = F91C92BC1ED1E2AD0025163E /* ClassB.m */; };
+		F91C92C01ED1E3470025163E /* Handle.m in Sources */ = {isa = PBXBuildFile; fileRef = F91C92BF1ED1E3470025163E /* Handle.m */; };
+		F91C92C31ED1E3670025163E /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = F91C92C21ED1E3670025163E /* Logger.m */; };
 		F9293F591ECF2F8B009D1B04 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = F9293F581ECF2F8B009D1B04 /* ClassA.m */; };
 		F945D3711ECC6DF800053EE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F945D3701ECC6DF800053EE4 /* main.m */; };
 		F945D3741ECC6DF800053EE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F945D3731ECC6DF800053EE4 /* AppDelegate.m */; };
@@ -17,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F91C92BB1ED1E2AD0025163E /* ClassB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassB.h; path = ../ClassB.h; sourceTree = "<group>"; };
+		F91C92BC1ED1E2AD0025163E /* ClassB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassB.m; path = ../ClassB.m; sourceTree = "<group>"; };
+		F91C92BE1ED1E3470025163E /* Handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Handle.h; sourceTree = "<group>"; };
+		F91C92BF1ED1E3470025163E /* Handle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Handle.m; sourceTree = "<group>"; };
+		F91C92C11ED1E3670025163E /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		F91C92C21ED1E3670025163E /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 		F9293F571ECF2F8B009D1B04 /* ClassA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
 		F9293F581ECF2F8B009D1B04 /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
 		F945D36C1ECC6DF800053EE4 /* BlockLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +78,12 @@
 				F945D3781ECC6DF800053EE4 /* Main.storyboard */,
 				F9293F571ECF2F8B009D1B04 /* ClassA.h */,
 				F9293F581ECF2F8B009D1B04 /* ClassA.m */,
+				F91C92BB1ED1E2AD0025163E /* ClassB.h */,
+				F91C92BC1ED1E2AD0025163E /* ClassB.m */,
+				F91C92BE1ED1E3470025163E /* Handle.h */,
+				F91C92BF1ED1E3470025163E /* Handle.m */,
+				F91C92C11ED1E3670025163E /* Logger.h */,
+				F91C92C21ED1E3670025163E /* Logger.m */,
 				F945D37B1ECC6DF800053EE4 /* Assets.xcassets */,
 				F945D37D1ECC6DF800053EE4 /* LaunchScreen.storyboard */,
 				F945D3801ECC6DF800053EE4 /* Info.plist */,
@@ -161,7 +176,10 @@
 				F9293F591ECF2F8B009D1B04 /* ClassA.m in Sources */,
 				F945D3771ECC6DF800053EE4 /* ViewController.m in Sources */,
 				F945D3741ECC6DF800053EE4 /* AppDelegate.m in Sources */,
+				F91C92C01ED1E3470025163E /* Handle.m in Sources */,
 				F945D3711ECC6DF800053EE4 /* main.m in Sources */,
+				F91C92C31ED1E3670025163E /* Logger.m in Sources */,
+				F91C92BD1ED1E2AD0025163E /* ClassB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

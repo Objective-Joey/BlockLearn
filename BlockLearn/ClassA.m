@@ -18,14 +18,20 @@ typedef void(^BlockTest) (void);
     __block NSMutableArray *arr1=[[NSMutableArray alloc] init];
     NSMutableArray *arr2=[[NSMutableArray alloc] init];
 
-    BlockTest blk =^{
-        
+
+    _dic=[NSMutableDictionary new];
+    [_dic setValue:@"fsdf" forKey:@"dfs"];
+
+    BlockTest blk =[^{
+
+        __strong ClassA * b=self;
+        _dic=[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"fsdfsd",@"dfsf" ,nil];
         int a=9;
         NSArray * arr=[[NSArray alloc] initWithObjects:@"Test", nil];
-        NSLog(@"Block1\n___%@_____%@",arr1,arr2);
+        NSLog(@"Block1\n___%@_____%@__%@",arr1,arr2,self);
 
-    };
-    
+    } copy];
+ 
     BlockTest blk2=^{
         
        NSLog(@"Block2\n___%@_____%@",arr1,arr2);

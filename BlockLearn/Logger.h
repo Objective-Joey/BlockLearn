@@ -1,14 +1,14 @@
 //
-//  TestClass.h
+//  Logger.h
 //  BlockLearn
 //
-//  Created by WangPu on 2017/5/19.
+//  Created by WangPu on 2017/5/21.
 //  Copyright © 2017年 WangPU. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface ClassA : NSObject
+@interface Logger : NSObject
 
-@property NSMutableDictionary * dic;
+-(void) wright;
 @end
